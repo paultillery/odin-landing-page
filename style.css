@@ -1,0 +1,236 @@
+body {
+    background-color: #1F2937; /* For the little gaps when trying to scroll too far */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Only relevant if panel is taller than content */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 20px;
+}
+
+/* Full-width rows of color */
+.row {
+    padding: 10px 100px; 
+    display: flex;
+    justify-content: center;
+}
+
+/* Contents within those rows */
+.content {
+    flex: 1;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Row One (Intro) */
+
+.row-one, .footer {
+    background-color: #1F2937; /* Not strictly necessary, given body */
+    color: #E5E7EB;
+}
+
+.header {
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between; 
+
+    margin-top: 10px;
+}
+
+.header-logo {
+    color: #F9F8FA;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.row-one-text-and-image {
+    flex: 1;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 80px 0;
+}
+
+.top-left-block {
+    width: 400px;
+    flex: initial;
+}
+
+.row-one h1 {
+    color: #F9F8FA;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.row-one-button {
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 5px 25px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.top-right-image {
+    width: 350px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+/* Row Two (Thumbnails) */
+
+.row-two {
+    background-color: #F9F8FA;
+    color: #1F2937;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-two .content {
+    margin: 80px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-two h2 {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.row-two-thumbnails {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    margin: 0 80px;
+}
+
+.thumbnail-and-caption {
+    width: 150px;
+}
+
+/* Ultimately didn't need the thumbnail-container divs; oh well */
+
+/*
+.thumbnail-container {
+    width: 150px;
+    height: 150px;
+    
+    box-sizing: border-box;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+*/
+
+.thumbnail-image {
+    width: 150px;
+    height: 150px;
+    
+    box-sizing: border-box;
+    border: 3px solid #1F2937;
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Row Three (Quote) */
+
+.row-three {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+
+    padding: 80px;
+}
+
+.row-three p {
+    margin: 0 0 20px;
+}
+
+.row-three .content {
+    width: 600px;
+    justify-self: center;
+    flex: initial; 
+}
+
+.row-three-quote {
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    align-self: center;
+}
+
+.row-three-quote-source {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/* Row Four (Call to Action) */
+
+.row-four {
+    background-color: #F9F8FA;
+    color: #F9F8FA;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-four .content {
+    max-width: 600px;
+    background-color: #3882F6;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row; /* needs to be specified to override inheritance */
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    margin: 60px 0;
+}
+
+.row-four h3 {
+    margin-bottom: 5px;
+}
+
+.row-four p {
+    margin-top: 0;
+}
+
+.row-four-button {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 25px;
+    width: fit-content;
+}
+
+/* Footer (might group some w/ Row One) */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
